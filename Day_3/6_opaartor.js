@@ -12,14 +12,14 @@
 10. Relational operators
 */
 
-//Assignment operators =
+//===============================================================Assignment operators =
 /* let x=10;
    let y;
     y=x; // return valu of right oprat
     console.log(y);
 */
 
-//compound oprator
+//===============================================================compound oprator
 // let x=10;
 // let y=20;
 
@@ -36,7 +36,7 @@
        x /= y; // x = x / y;
 */
 
-// Arithmetic-operators
+// ===============================================================Arithmetic-operators
 /*//     +
   //     -
   //     *
@@ -50,11 +50,11 @@
    console.log(x);
 */
 
-// Logical operators
+//=============================================================== Logical operators
 // mostly retun Boolean value
 /*
     //use with boolean
-    //1. Logical AND &&
+    //===============================================================1. Logical AND &&
     let happy=true && true;
     console.log(happy); // true
 
@@ -85,7 +85,7 @@
     logical operato evaluat left to right so can use tecnicts like
     short circuit techniques
 
-    //2. Logical OR ||
+    //===============================================================2. Logical OR ||
     let happy=true && false;
     console.log(happy); // true
 
@@ -109,7 +109,7 @@
             true || "cat"
             true
 
-    //3. Logical  NOT !
+    //===============================================================3. Logical  NOT !
 
     let happy=true;
     console.log(!happy); // false
@@ -124,7 +124,7 @@
     }
 */
 
-// Conditional operator (ternary operator)
+//=============================================================== Conditional operator (ternary operator)
 
 // const userRole = "admin";
 // if (userRole === "admin") {
@@ -136,7 +136,7 @@
 // condition ? '' : '';
 // userRole === "admin" ? console.log("you are an Admin") : console.log("you are not an Admin");
 
-// Comparison Oprator
+// ===============================================================Comparison Oprator
 //return Boolean value
 
 // Equal (==)

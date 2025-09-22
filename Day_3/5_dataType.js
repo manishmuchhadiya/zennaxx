@@ -1,5 +1,5 @@
 //#####================ Data type
-// 001 primitive data type
+// ===============================================================001 primitive data type
 
 //     1. Number //we can stor int negativ and float value in number
 //     let age = 25;
@@ -25,7 +25,7 @@
 //     use rerly it is unique
 //     obj propti is string  but we can use symbol as key  or value
 
-// 002. structural type
+//=============================================================== 002. structural type
 
 //  1. Object
 //     1.1 function //in js function is also objs
@@ -39,5 +39,5 @@
 //     we can stor unique value
 //     1.5 date
 
-// 3.structural root
+//=============================================================== 3.structural root
 //     1.null
