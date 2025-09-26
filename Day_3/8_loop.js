@@ -61,7 +61,7 @@ const students = [
 // return true; //filter return true or false
 // });
 
-/*
+/*  // Q = check student how many student is fail less then 45 is fail
 const failed = students.filter((stu) => {
   if (stu.marks < 45) {
     return true;
@@ -103,6 +103,8 @@ const users = [
     lname: "Doe",
   },
 ];
+// Q = i want f name and l name to gether like full name
+
 // const finalUser = users.map((user) => {
 //   //   return {
 //   //     fullname: user.fname + " " + user.lname,
