@@ -58,56 +58,115 @@ Slove using callback then promisce and async await
 
 // Promises  ============================================================================================
 
+// const register = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("   - 1.Register");
+//       resolve();
+//     }, 5000);
+//   });
+// };
+
+// const sendEmail = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("   - 2.Email send");
+//       resolve();
+//     }, 4000);
+//   });
+// };
+
+// const logIn = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("   - 3.Login succesful");
+//       // reject("error at login");
+//       resolve();
+//     }, 3000);
+//   });
+// };
+
+// const getUserData = () => {
+//   promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("   - 4.Got user data");
+//       resolve();
+//     }, 2000);
+//   });
+//   return promise;
+// };
+
+// const displayUserData = () => {
+//   setTimeout(() => {
+//     console.log("   - 5.User data display");
+//   }, 1000);
+// };
+
+// register()
+//   .then(sendEmail)
+//   .then(logIn)
+//   .then(getUserData)
+//   .then(displayUserData)
+//   .catch((err) => console.log(err));
+
+// console.log("  Last But First");
+
+// Async Await ==========================================================================================
+
 const register = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("   - 1.Register");
+      console.log("   - 1.register");
       resolve();
     }, 5000);
   });
 };
-
 const sendEmail = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("   - 2.Email send");
+      console.log("   - 2.sendEmail");
       resolve();
     }, 4000);
   });
 };
-
 const logIn = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("   - 3.Login succesful");
-      reject("error at login");
+      resolve();
     }, 3000);
   });
 };
-
 const getUserData = () => {
-  setTimeout(() => {
-    console.log("   - 4.Got user data");
-  }, 2000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("   - 4.Get user data");
+      resolve();
+    }, 2000);
+  });
 };
-
 const displayUserData = () => {
-  setTimeout(() => {
-    console.log("   - 5.User data display");
-  }, 1000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("   - 5.Display user data");
+      // resolve();
+      reject("error ");
+    }, 1000);
+  });
 };
 
-register()
-  .then(sendEmail)
-  .then(logIn)
-  .then(getUserData)
-  .then(displayUserData)
-  .catch((err) => console.log(err));
-// sendEmail();
-// logIn();
-// getUserData();
-// displayUserData();
+async function funCall() {
+  // try {
+  await register();
+  await sendEmail();
+  await logIn();
+  await getUserData();
+  await displayUserData();
+  // }
+  // catch (err) {
+  // console.log("Something Went Wrong.......", err);
+  // }
+}
 
-console.log("  Last But First");
-
-// Async Await ==========================================================================================
+funCall();
+console.log("Last but First");
