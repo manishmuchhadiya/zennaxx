@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "calibri";
+  background-color: rgb(240, 238, 238);
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  width: 280px;
+  height: 330px;
+  background-color: white;
+}
+
+/* header styling */
+.top {
+  margin: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 82.5px;
+}
+.img-border {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top img {
+  width: 40px;
+  border-radius: 50%;
+}
+.btn {
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 8px;
+  width: 70px;
+  height: 27px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn p {
+  margin-top: 5px;
+  color: gray;
+}
+.icon {
+  width: 18px;
+  color: gray;
+}
+
+/* min section styling */
+
+.mid {
+  margin: 0 20px;
+  height: 139px;
+}
+.oneline {
+  display: flex;
+  align-items: center;
+}
+.upload-status {
+  margin-left: 10px;
+  font-size: 10px;
+  color: grey;
+}
+.mid h3 {
+  margin: 0 0 6px 0;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag {
+  background-color: lightgrey;
+  border-radius: 8px;
+  padding: 0 9px;
+  height: 27px;
+  margin: 5px 5px 0 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+/* footer */
+
+.footer {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  align-self: flex-end;
+}
+.price,
+.btn-apply {
+  align-self: flex-end;
+}
+.city {
+  font-size: 10px;
+  color: grey;
+}
+
+.btn-apply button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
