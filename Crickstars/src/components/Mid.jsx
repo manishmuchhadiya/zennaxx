@@ -47,12 +47,12 @@ const Mid = () => {
 
         <div className="border-1 h-[34px]"></div>
         {/* footer */}
-        {/* <div className="w-full h-[34px] flex border-1">
+        <div className="w-full h-[34px] flex border-1">
           <span className="pl-[20px] py-[12px] text-[14px] text-[#3747DE] font-medium">
             Red Lions won the toss and elected to bat first
           </span>
           <img src={live} alt="live" />
-        </div> */}
+        </div>
       </div>
     </div>
   );
